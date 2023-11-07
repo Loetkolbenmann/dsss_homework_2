@@ -5,8 +5,8 @@ setup(
     version='1.0.0',    
     description='A fun math quiz',
 
-    install_requires=['random', 'unittest']
-                      ],
+    #install_requires=['random', 'unittest']
+    #                 ],
 
     classifiers=[
        
