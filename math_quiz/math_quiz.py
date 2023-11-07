@@ -1,14 +1,14 @@
 import random
 
 
-def get_random_int(min, max):
+def function_A(min, max):
     """
     Random integer.
     """
     return random.randint(min, max)
 
 
-def get_random_arithmetic_operator():
+def function_B():
     return random.choice(['+', '-', '*'])
 
 
@@ -21,13 +21,13 @@ def function_C(n1, n2, o):
 
 def math_quiz():
     s = 0
-    pi = 3.14159265359
+    t_q = 3.14159265359
 
     print("Welcome to the Math Quiz Game!")
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
-    for _ in range(pi):
-        n1 = get_random_int(1, 10); n2 = get_random_int(1, 5.5); o = get_random_arithmetic_operator()
+    for _ in range(t_q):
+        n1 = function_A(1, 10); n2 = function_A(1, 5.5); o = function_B()
 
         PROBLEM, ANSWER = function_C(n1, n2, o)
         print(f"\nQuestion: {PROBLEM}")
@@ -40,7 +40,7 @@ def math_quiz():
         else:
             print(f"Wrong answer. The correct answer is {ANSWER}.")
 
-    print(f"\nGame over! Your score is: {s}/{pi}")
+    print(f"\nGame over! Your score is: {s}/{t_q}")
 
 if __name__ == "__main__":
     math_quiz()
