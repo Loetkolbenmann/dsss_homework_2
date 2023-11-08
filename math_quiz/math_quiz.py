@@ -82,7 +82,7 @@ def math_quiz():
             print("Correct! You earned a point.")
             score += 1
         else:
-            print(f"Wrong answer. The correct answer is {ANSWER}.")
+             print(f"Wrong answer. The correct answer is {ANSWER}.")
 
     print(f"\nGame over! Your score is: {score}/{rounds_to_play}")
 
