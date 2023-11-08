@@ -13,5 +13,5 @@ setup(
         'Intended Audience :: DSSS Team',
         
     ],
-    scripts=["math_quiz.py"]
+    scripts=["math_quiz/math_quiz.py"]
 )
